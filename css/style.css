@@ -1,20 +1,17 @@
 :root {
-    --primary-color: #f8f3e6; /* クリーム色ベース */
-    --accent-color: #ff9640; /* オレンジアクセント */
-    --secondary-accent: #8ec963; /* ライトグリーン */
-    --third-accent: #ffcc29; /* イエロー */
-    /* --text-color: #333333; を変更 */
-    --text-color: #4a4a4a; /* 少し柔らかいダークグレーに */
-    --light-text: #777777; /* ライトテキストも少し調整 */
+    --primary-color: #f8f3e6;
+    --accent-color: #ff9640;
+    --secondary-accent: #8ec963;
+    --third-accent: #ffcc29;
+    --text-color: #4a4a4a;
+    --light-text: #777777;
 }
 
-/* font-family の基本指定を変更 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family を変更 */
-    font-family: 'Noto Sans JP', sans-serif; /* Noto Sans JP を優先、なければ標準サンセリフ */
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
@@ -176,8 +173,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    color: var(--accent-color);
+    overflow: hidden;
+}
+
+.benefit-icon img {
+    max-width: 90%; 
+    max-height: 90%;
+    display: block; 
 }
 
 .benefit-title {
@@ -351,30 +353,30 @@ footer {
 }
 
 header {
-    display: flex; /* 中身を横並びにするため */
-    justify-content: center; /* 中央揃え */
+    display: flex; 
+    justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* 半透明白 (申し込みフォーム風) */
-    backdrop-filter: blur(5px); /* 背景ぼかし */
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    padding: 10px 0; /* 上下パディング (元のLPより少し狭く) */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影 */
-    position: fixed; /* 固定表示 */
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
     width: 100%;
     top: 0;
-    left: 0; /* 左端に配置 */
-    z-index: 1000; /* 他の要素より手前に */
+    left: 0;
+    z-index: 1000;
 }
 
 .header-container {
     display: flex;
-    justify-content: space-between; /* ロゴとボタンを両端に */
+    justify-content: space-between;
     align-items: center;
-    width: 100%; /* container 幅いっぱいに */
+    width: 100%;
 }
 
 .logo {
-    height: 40px; /* ロゴの高さ調整 */
+    height: 40px;
     display: flex;
     align-items: center;
 }
@@ -384,65 +386,60 @@ header {
     width: auto;
 }
 
-/* サポートボタン (申し込みフォーム風のスタイルを適用しつつ、色はLPテーマに合わせる) */
 .support-btn {
-    background-color: var(--accent-color); /* LPのアクセントカラー (オレンジ) */
-    color: white !important; /* 文字色を白に */
-    padding: 10px 20px; /* パディング調整 */
+    background-color: var(--accent-color);
+    color: white !important;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px; /* 角丸 (申し込みフォーム風) */
+    border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-    font-size: 14px; /* フォントサイズ調整 */
+    font-size: 14px;
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    box-shadow: none; /* 元のLPのボタン影は解除 */
-}
-
-.support-btn:hover {
-    background-color: #e67e22; /* オレンジの少し濃い色 (適宜調整) */
-    text-decoration: none;
-    transform: none; /* 元のLPのボタンホバー効果は解除 */
     box-shadow: none;
 }
 
-/* 既存のフッタースタイルを上書き or 削除 */
-footer {
-    background-color: #e9e9e9; /* 薄いグレー (申し込みフォーム風) */
-    color: #555; /* 文字色 (申し込みフォーム風) */
-    padding: 25px 0;
-    margin-top: 50px; /* mainとの間隔 */
-    border-top: 1px solid #ccc; /* 上境界線 */
-    text-align: center; /* 中央揃え */
+.support-btn:hover {
+    background-color: #e67e22;
+    text-decoration: none;
+    transform: none;
+    box-shadow: none;
 }
 
-/* 既存の footer .footer-container のスタイルを上書き */
-footer .footer-container {
-    max-width: 800px; /* フォームに合わせた幅 */
-    margin: 0 auto;
-    padding: 0 20px;
-    display: block; /* display:flex を解除 */
+footer {
+    background-color: #e9e9e9;
+    color: #555;
+    padding: 25px 0;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
     text-align: center;
 }
 
-/* 既存のフッター要素のスタイルを削除・調整 */
-.footer-info, .footer-contact { display: none; } /* 元のLPのフッター要素は非表示 */
-.footer-logo { display: none; } /* 元のLPのフッターロゴは非表示 */
+footer .footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: block;
+    text-align: center;
+}
+
+.footer-info, .footer-contact { display: none; }
+.footer-logo { display: none; }
 .footer-phone { display: none; }
 
-/* 新しいフッターリンクのスタイル */
 .footer-links {
     margin-bottom: 15px;
 }
 
 .footer-links a {
-    color: #555; /* ← 濃いグレーに変更 */
+    color: #555;
     text-decoration: none;
     margin: 0 12px;
-    font-size: 14px; /* フォントサイズ調整 */
-    transition: color 0.2s, text-decoration 0.2s; /* transition に text-decoration も追加 */
+    font-size: 14px;
+    transition: color 0.2s, text-decoration 0.2s;
 }
 
 .footer-links a:hover {
@@ -456,13 +453,12 @@ footer .footer-container {
     font-size: 14px;
 }
 
-/* 新しいコピーライトのスタイル */
 .copyright {
     font-size: 12px;
     color: #777;
     margin: 0;
-    padding-top: 0; /* 上の padding で調整済み */
-    border-top: none; /* 上の border で調整済み */
+    padding-top: 0;
+    border-top: none;
 }
 
 
@@ -508,17 +504,16 @@ footer .footer-container {
         padding: 8px 15px;
         font-size: 12px;
     }
-    
-    /* フッターリンクの調整 */
+
     .footer-links a {
-        display: block; /* 縦並びにする */
+        display: block;
         margin: 8px 0;
     }
     .footer-links .separator {
-        display: none; /* モバイルでは区切り線を非表示 */
+        display: none;
     }
     .copyright {
-        margin-top: 15px; /* リンクとの間にスペース */
+        margin-top: 15px;
     }
 }
 

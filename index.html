@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本でんき | 引っ越し先でもカンタン手続き</title>
-    <!-- Google Fontsの読み込み -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX'); 
+    </script>
+    -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -12,16 +22,14 @@
 </head>
 <body>
     <header>
-        <div class="header-container container"> <!-- container クラスは既存のものを活用 -->
-          <a href="https://www.nihongas.co.jp/" class="logo"> <!-- ロゴ画像へのパスは適宜設定してください -->
-              <img src="images/logo.png" alt="日本ガスでんき ロゴ" /> <!-- ロゴ画像のパスを修正 -->
+        <div class="header-container container"> 
+          <a href="https://www.nihongas.co.jp/" class="logo"> 
+              <img src="images/logo.png" alt="日本ガスでんき ロゴ" /> 
           </a>
-          <!-- 引っ越しLPにはナビゲーションがなかったので、サポートボタンのみ配置 -->
-          <a href="https://www.nihongas.co.jp/support/" class="support-btn">お客様サポート</a> <!-- リンク先は適宜設定 -->
+          <a href="https://www.nihongas.co.jp/support/" class="support-btn">お客様サポート</a> 
         </div>
       </header>
 
-    <!-- ヒーローセクション -->
     <div class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -30,8 +38,7 @@
             <a href="https://www.nihongas.co.jp/support/move/contact-web.html" class="cta-button">Webで完結！電気の手続きはこちら ▶</a>
         </div>
     </div>
-    
-    <!-- お悩みセクション -->
+
     <section class="problems">
         <div class="container">
             <h2 class="section-title">引越しってやることいっぱい…</h2>
@@ -50,7 +57,6 @@
         </div>
     </section>
     
-    <!-- 解決策セクション -->
     <section class="solution">
         <div class="container">
             <h2 class="section-title">引っ越し先の電気も【日本ガスでんき】なら安心＆ラクラク！</h2>
@@ -63,29 +69,34 @@
             </div>
         </div>
     </section>
-    
-    <!-- メリットセクション -->
+
     <section class="benefits">
         <div class="container">
             <h2 class="section-title">新生活も安心！【日本ガスでんき】継続のメリット</h2>
             <div class="benefits-container">
                 <!-- メリット1 -->
                 <div class="benefit-card">
-                    <div class="benefit-icon">📱</div>
+                    <div class="benefit-icon">
+                        <img src="images/icon-web-procedure.png" alt="Web手続きアイコン">
+                    </div>
                     <h3 class="benefit-title">Webでサクッと！<br>簡単お手続き</h3>
                     <p>面倒な書類記入や郵送は不要！スマホやPCから、引っ越し情報などを入力するだけでお手続きが完了します。最短5分！</p>
                 </div>
-                
+
                 <!-- メリット2 -->
                 <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
+                    <div class="benefit-icon">
+                        <img src="images/icon-price-plan.png" alt="料金プランアイコン">
+                    </div>
                     <h3 class="benefit-title">料金プランもそのままOK</h3>
                     <p>今お使いの料金プラン(アンペアは異なる可能性があります)を、引っ越し先でも引き続きご利用いただけます。当社都市ガスとセットなら、さらにお得が続きます！</p>
                 </div>
-                
+
                 <!-- メリット3 -->
                 <div class="benefit-card">
-                    <div class="benefit-icon">🏠</div>
+                    <div class="benefit-icon">
+                        <img src="images/icon-support.png" alt="サポートアイコン">
+                    </div>
                     <h3 class="benefit-title">いつもの安心感！<br>サポート体制も万全</h3>
                     <p>もしもの時のお問い合わせ窓口もそのままご利用可能。ご不明な点等がございましたらどうぞご連絡ください。</p>
                 </div>
@@ -93,7 +104,6 @@
         </div>
     </section>
     
-    <!-- ステップセクション -->
     <section class="steps">
         <div class="container">
             <h2 class="section-title">たったこれだけ！でんき申し込み手続きの流れ</h2>
@@ -119,7 +129,6 @@
         </div>
     </section>
     
-    <!-- FAQセクション -->
     <section class="faq">
         <div class="container">
             <h2 class="section-title">引っ越しに伴う電気申込のQ&A</h2>
@@ -203,8 +212,7 @@
             </div>
         </div>
     </section>
-    
-    <!-- 最終CTAセクション -->
+
     <section class="final-cta" id="form">
         <div class="container">
             <h2 class="section-title">面倒な電気のことはサッと済ませて、<br>ワクワクする新生活へ！</h2>
@@ -213,16 +221,17 @@
         </div>
     </section>
     
-    <!-- フッター -->
     <footer>
-        <div class="footer-container container"> <!-- container クラスは既存のものを活用 -->
+        <div class="footer-container container"> 
         <div class="footer-links">
-            <a href="https://www.nihongas.co.jp/company/privacy.html">プライバシーポリシー</a> <!-- リンク先は適宜設定 -->
+            <a href="https://www.nihongas.co.jp/company/privacy.html">プライバシーポリシー</a>
             <span class="separator">|</span>
-            <a href="https://www.nihongas.co.jp/company/profile/rule.html">特定商取引法に基づく表示</a> <!-- リンク先は適宜設定 -->
-            <!-- 必要であれば他のリンクも追加 -->
+            <a href="https://www.nihongas.co.jp/company/profile/rule.html">特定商取引法に基づく表示</a> 
         </div>
-        <p class="copyright">Copyright © 日本瓦斯株式会社 All rights reserved.</p> <!-- 会社名を修正 -->
+        <p style="font-size:0.8em; text-align:center; margin-top:15px; margin-bottom:15px; color: #555;">
+            当サイトでは、サービス向上のためGoogle Analyticsを利用しています。これに付随して生成されるCookieは、アクセス状況の分析目的のみに使用し、個人を特定する情報を含むことはありません。上記のプライバシーポリシーも併せてご確認ください。
+        </p>
+        <p class="copyright">Copyright © 日本瓦斯株式会社 All rights reserved.</p>
         </div>
     </footer>
 
@@ -233,7 +242,6 @@
                 const parent = question.parentElement;
                 parent.classList.toggle('active');
                 
-                // 他の開いているFAQを閉じる
                 document.querySelectorAll('.faq-item').forEach(item => {
                     if (item !== parent && item.classList.contains('active')) {
                         item.classList.remove('active');
